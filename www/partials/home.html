@@ -1,0 +1,70 @@
+<article class="slideShowWrapper" ng-iscroll="slideShowWrapper">
+    <ul class="slideshow mainSlideShow">
+        <li class="slide yourSMB">
+            <span class="topRow">
+                הSmart Box שלך
+            </span>
+            <img src="img/smbImg.gif" />
+            <span class="bottomRow">
+<!--                <span class="icon icon-arrow-down"></span>-->
+                כאן תוכל להנות מהאפשרויות הרבות שמציע הSmart Box שלך
+<!--                <span class="icon icon-arrow-down"></span>-->
+            </span>
+        </li>
+<!--        <li class="slide dataUsage">
+            <span class="topRow">
+                נתוני צריכת האינטרנט שלך
+            </span>
+            <span class="graph">
+
+            </span>
+            <span class="bottomRow">
+                תוכל לשדרג את מהירות הרשת שלך כדי ליהנות יותר מצריכת התוכן. לשדרוג, לחץ כאן
+            </span>
+        </li>-->
+        <li class="slide contentUsage">
+            <span class="topRow">
+                התפלגות צריכת התוכן שלך היא
+            </span>
+            <figure class="grpah" ng-pie-chart data="pieChartData"></figure>
+        </li>
+    </ul>
+</article>
+<ul class="actionsMenu" ng-controller="actionsMenuCtrl">
+    <li class="menuItem">
+        <a href="#networkUpgrade">
+            <span class="icon icon-rocket" ng-style="{{fontSizeStyle()}}"></span>
+            <span class="text"> שדרוג הרשת</span>
+        </a>
+    </li>
+    <li class="menuItem">
+        <a href="#fileSystem?path=/">
+            <span class="icon icon-docs" ng-style="{{fontSizeStyle()}}"></span>
+            <span class="text">   רשת קבצים</span>
+        </a>
+    </li>
+    <li class="menuItem">
+        <a href="#boxOperations">
+            <span class="icon icon-equalizer" ng-style="{{fontSizeStyle()}}"></span>
+            <span class="text">                    תפעול קופסא</span>
+        </a>
+    </li>
+    <li class="menuItem">
+        <a href="#connectionsMaps">
+            <span class="icon icon-map" ng-style="{{fontSizeStyle()}}"></span>
+            <span class="text"> מפת חיבורים</span>
+        </a>
+    </li>
+    <li class="menuItem">
+        <a href="#VOB">
+            <span class="icon icon-call-end" ng-style="{{fontSizeStyle()}}"></span>
+            <span class="text">טלפוניה</span>
+        </a>
+    </li>
+    <li class="menuItem">
+        <a href="#WiFi">
+            <span class="icon icon-feed" ng-style="{{fontSizeStyle()}}"></span>
+            <span class="text">WiFi</span>
+        </a>
+    </li>
+</ul>

@@ -1,0 +1,43 @@
+<h3 class="subTitle">
+    <span class="backArrow" ng-click="$back()">
+        <span class="icon icon-arrow-right"></span>
+    </span>
+    <span class="titleSelf ltr FSTopPath">
+        <a ng-repeat="link in getSplitPath()" ng-click="doPath(link.link)" ng-if="link.link">{{link.name}}/</a>
+        <span ng-repeat="link in getSplitPath()" ng-if="!link.link">{{link.name}}</span>
+    </span>
+    <span class="icon" ng-class="{'icon-grid': grid, 'icon-list' : !grid}" ng-click="toggleGrid()"></span>
+</h3>
+<section id="FSListScrollWrapper" class="FSListScrollWrapper scrollWrapper" ng-iscroll="FSListScrollWrapper">
+    <article class="FSListArticle">
+        <ul class="FSList folders clearfix" ng-class="{'grid': grid}">
+            <li class="title">
+                תיקיות
+            </li>
+            <li class="node" ng-repeat="node in filesObj()| filter: {type: 'folder'}">
+                <span class="icon rightIcon" ng-class="isMain()" ng-click="doPath(currentPath, node.name)" ng-class="{{getNodeIcon(node)}}"></span>
+                <span class="name" ng-click="doPath(currentPath, node.name)">{{node.name}}</span>
+            </li>
+        </ul>
+        <ul class="FSList files clearfix" ng-class="{'grid': grid}">
+            <li class="title">
+                קבצים
+            </li>
+            <li class="node" ng-repeat="node in filesObj()| filter: {type: 'file'}">
+                <span class="icon rightIcon" ng-click="openPopUp(node.name)" ng-class="fileExtIcon(node.name)"></span>
+                <span class="name" ng-click="openPopUp(node.name)">
+                    <span>{{node.name}}</span>
+                </span>
+            </li>
+        </ul>
+    </article>
+</section>
+<section class="filePopUp" ng-if="showPopUp()">
+    <section class="closingLayer" ng-click="closePopUp()"></section>
+    <article class="cannotOpenFile" ng-if="!popUpContent()">
+        <span class="icon icon-shield"></span>
+        <span class="comment">לא ניתן לצפות או לערוך את הקובץ המבוקש.</span>
+    </article>
+    <span class="clock"></span>
+    <img ng-if="popUpContent()" ng-src="{{popUpContent()}}">
+</section>

@@ -1,0 +1,187 @@
+[
+    {
+        "name": "sandisk cruser 16GB",
+        "type": "folder",
+        "nodes": [
+            {
+                "name": "תמונות משפחתיות",
+                "type": "folder",
+                "nodes": [
+                    {
+                        "name": "טיול קולומביה 2014",
+                        "type": "folder",
+                        "nodes": [
+                            {
+                                "name": "IMG0001.jpg",
+                                "type": "file",
+                                "size": "200KB"
+                            },
+                            {
+                                "name": "IMG0002.jpg",
+                                "type": "file",
+                                "size": "200KB"
+                            },
+                            {
+                                "name": "IMG0003.jpg",
+                                "type": "file",
+                                "size": "200KB"
+                            },
+                            {
+                                "name": "IMG0004.jpg",
+                                "type": "file",
+                                "size": "200KB"
+                            },
+                            {
+                                "name": "IMG0005.jpg",
+                                "type": "file",
+                                "size": "200KB"
+                            },
+                            {
+                                "name": "IMG0006.jpg",
+                                "type": "file",
+                                "size": "200KB"
+                            },
+                            {
+                                "name": "IMG0007.jpg",
+                                "type": "file",
+                                "size": "200KB"
+                            },
+                            {
+                                "name": "IMG0008.jpg",
+                                "type": "file",
+                                "size": "200KB"
+                            },
+                            {
+                                "name": "IMG0009.jpg",
+                                "type": "file",
+                                "size": "200KB"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "חתונה יוני ויונית 21.14.2014",
+                        "type": "folder",
+                        "nodes": [
+                            {
+                                "name": "IMG0001.jpg",
+                                "type": "file",
+                                "size": "200KB"
+                            },
+                            {
+                                "name": "IMG0002.jpg",
+                                "type": "file",
+                                "size": "200KB"
+                            },
+                            {
+                                "name": "IMG0003.jpg",
+                                "type": "file",
+                                "size": "200KB"
+                            },
+                            {
+                                "name": "IMG0004.jpg",
+                                "type": "file",
+                                "size": "200KB"
+                            },
+                            {
+                                "name": "IMG0005.jpg",
+                                "type": "file",
+                                "size": "200KB"
+                            },
+                            {
+                                "name": "IMG0006.jpg",
+                                "type": "file",
+                                "size": "200KB"
+                            },
+                            {
+                                "name": "IMG0007.jpg",
+                                "type": "file",
+                                "size": "200KB"
+                            },
+                            {
+                                "name": "IMG0008.jpg",
+                                "type": "file",
+                                "size": "200KB"
+                            },
+                            {
+                                "name": "IMG0009.jpg",
+                                "type": "file",
+                                "size": "200KB"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "IMG0001.jpg",
+                        "type": "file",
+                        "size": "200KB"
+                    },
+                    {
+                        "name": "IMG0002.jpg",
+                        "type": "file",
+                        "size": "200KB"
+                    },
+                    {
+                        "name": "IMG0003.jpg",
+                        "type": "file",
+                        "size": "200KB"
+                    },
+                    {
+                        "name": "IMG0004.jpg",
+                        "type": "file",
+                        "size": "200KB"
+                    },
+                    {
+                        "name": "IMG0005.jpg",
+                        "type": "file",
+                        "size": "200KB"
+                    },
+                    {
+                        "name": "IMG0006.jpg",
+                        "type": "file",
+                        "size": "200KB"
+                    },
+                    {
+                        "name": "IMG0007.jpg",
+                        "type": "file",
+                        "size": "200KB"
+                    },
+                    {
+                        "name": "IMG0008.jpg",
+                        "type": "file",
+                        "size": "200KB"
+                    },
+                    {
+                        "name": "IMG0009.jpg",
+                        "type": "file",
+                        "size": "200KB"
+                    }
+                ]
+            },
+            {
+                "name": "קבצים - ניהול הבית",
+                "type": "folder",
+                "nodes": [
+                    {
+                        "name": "חשבון חודשי.xlsx",
+                        "type": "file",
+                        "size": "1MB"
+                    },
+                    {
+                        "name": "סיכום.docx",
+                        "type": "file",
+                        "size": "200KB"
+                    },
+                    {
+                        "name": "bank account.pdf",
+                        "type": "file",
+                        "size": "200KB"
+                    },
+                    {
+                        "name": "הוצאות והכנסות 2013.xls",
+                        "type": "file",
+                        "size": "200KB"
+                    }
+                ]
+            }
+        ]
+    }
+]

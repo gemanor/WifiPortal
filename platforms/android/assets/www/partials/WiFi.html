@@ -1,0 +1,79 @@
+<section class="pageWithoutTitle">
+    <article ng-repeat="network in wifiData" ng-style="getSectionHeight(line)">
+        <h3 class="subTitle">
+            {{network.name}}
+        </h3>
+        <div class="wifiSettingsWrapper" ng-iscroll="wifiForm">
+            <ul class="wifiSettingsList">
+                <li class="formRow">
+                    <label>
+                        <span class="textLabel">
+                            שם הרשת:
+                        </span>
+                        <span class="inputWrapper">
+                            <input type="text" class="textInput" value="{{network.networkName}}" />
+                        </span>
+                    </label>
+                </li>
+                <li class="formRow">
+                    <label>
+                        <span class="textLabel">
+                            סיסמת רשת:
+                        </span>
+                        <span class="inputWrapper">
+                            <input type="text" class="textInput" ng-if="hideCharts[$index]" value="{{network.networkPassword}}" />
+                            <input type="password" class="textInput" ng-if="!hideCharts[$index]" value="{{network.networkPassword}}" />
+                        </span>
+                    </label>
+                    <label class="bottomRow">
+                        <input type="checkbox" ng-model="hideCharts[$index]" /> 
+                        <span class="textLabel inline">הצג תווים</span>
+                    </label>
+                </li>
+                <li class="formRow">
+                    <label>
+                        <span class="textLabel">
+                            ערוץ
+                        </span>
+                        <span class="inputWrapper select">
+                            <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                            </select>
+                        </span>
+                    </label>
+                </li>
+                <li class="formRow">
+                    <label>
+                        <span class="textLabel">
+                            רשת גלויה?
+                        </span>
+                        <span class="switchWrapper">
+                            <span class="onoffswitch">
+                                <input type="checkbox" id="onoffswitch[{{$index}}]" class="onoffswitch-checkbox" ng-model="network.hidden">
+                                <label class="onoffswitch-label" for="myonoffswitch[{{$index}}]">
+                                    <span class="onoffswitch-inner" ng-class="isChecked(network.hidden)">
+                                        <span class="onoffswitch-active"><span class="onoffswitch-switch">ON</span></span>
+                                        <span class="onoffswitch-inactive"><span class="onoffswitch-switch">OFF</span></span>
+                                    </span>
+                                </label>
+                            </span>
+                        </span>
+                    </label>
+                </li>
+                <li class="buttonsRow center">
+                    <a href="#" class="button">שמירת שינויים</a>
+                </li>
+            </ul>
+        </div>
+    </article>
+</section>

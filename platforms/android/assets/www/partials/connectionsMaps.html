@@ -1,0 +1,28 @@
+<h3 class="subTitle">
+    לחצו על האובייקטים במפה כדי להציג נתונים
+</h3>
+<section class="connectionsMaps scrollWrapper" ng-iscroll="connectionsMapsScrollWrapper">
+    <article ng-connections-maps data="mapData">
+        <article></article>
+        <svg id="circle" height="60" width="60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+            <image x="0" y="0" height="60" width="60"  xlink:href="img/personal5.svg" />
+        </svg>
+    </article>
+</section>
+<section class="filePopUp" ng-if="showPopUp()">
+    <section class="closingLayer" ng-click="closePopUp()">
+        <span class="close">X</span>
+    </section>
+    <article class="popUpMessage">
+        <h3>
+            {{getPopUpContent().name}}
+        </h3>
+        <p class="singleMessage">
+            <span class="row" ng-repeat="(name, detail) in getPopUpContent().details">
+                <span class="label">{{name}}:</span>
+                <span class="value">{{detail}}</span>
+            </span>
+        </p>
+    </article>
+    <span class="clock"></span>
+</section>

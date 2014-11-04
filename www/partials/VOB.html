@@ -1,0 +1,26 @@
+<section class="pageWithoutTitle">
+    <section class="callLogSection" ng-repeat="line in callLogObj" ng-style="getSectionHeight(line)">
+        <h3 class="subTitle">
+            <span class="number">
+                {{line.number}}
+            </span>
+            <span class="icon icon-volume-2"><i>{{line.volume}}</i></span>
+            <span class="icon icon-call-end" ng-class="isActive(line)"></span>
+        </h3>
+        <article class="callLogWrapper" ng-iscroll>
+            <ul class="callLog">
+                <li ng-repeat="call in line.callLis">
+                    <span class="icon" ng-class="isInOrOut(call)"></span>
+                    <span class="number">
+                        <a href="#">{{call.number}}</a>
+                    </span>
+                    <span class="length">
+                        <span><span class="icon icon-calendar"></span>{{call.date}}</span>
+                        <span><span class="icon icon-clock"></span>{{call.time}}</span>
+                        <span><span class="icon icon-info"></span>{{call.length}}</span>
+                    </span>
+                </li>
+            </ul>
+        </article>
+    </section>
+</section>

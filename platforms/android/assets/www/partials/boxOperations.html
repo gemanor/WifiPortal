@@ -1,0 +1,75 @@
+<h3 class="subTitle center">
+    מספר סידורי: Orange-1918
+</h3>
+<ul class="boxOperationList">
+    <li>
+        <span class="label">
+            כתובת IP:
+        </span>
+        <span class="value">
+            192.168.13.43
+        </span>
+    </li>
+    <li>
+        <span class="label">
+            מספר טלפון 1:
+        </span>
+        <span class="value">
+            074-43231434
+        </span>
+    </li>
+    <li>
+        <span class="label">
+            מספר טלפון 2:
+        </span>
+        <span class="value">
+            074-15623557
+        </span>
+    </li>
+    <li>
+        <span class="label">
+            חיבור לאינטרנט
+        </span>
+        <span class="value">
+            ADSL
+        </span>
+    </li>
+    <li class="buttonsRow center">
+        <a href="#" class="button" ng-click="openPopUp('reset')">
+            אתחול קופסא
+        </a>
+        <a href="#" class="button" ng-click="openPopUp('sendToTech')">
+            שליחת דו״ח טכנאי
+        </a>
+    </li>
+</ul>
+<section class="filePopUp" ng-if="showPopUp()">
+    <section class="closingLayer" ng-click="closePopUp()">
+        <span class="close">X</span>
+    </section>
+    <article class="popUpMessage" ng-if="popUpContent() == 'reset'">
+        <h3>
+            אתחול קופסא
+        </h3>
+        <p class="singleMessage">
+            האתחול בוצע בהצלחה!
+        </p>
+    </article>
+    <article class="popUpMessage" ng-if="popUpContent() == 'sendToTech'">
+        <h3>
+            שליחת דו״ח לטכנאי
+        </h3>
+        <p class="singleMessage center" ng-if="!logSents">
+            <span class="inputWrapper"><input type="email" placeholder="כתובת דוא״ל לשליחה" class="textInput" /></span>
+            <span class="row">
+                <a href="#" class="button small" ng-click="setLogSents()">
+                    שליחה
+                </a>
+            </span>
+        </p>
+        <p class="singleMessage" ng-if="logSents">
+            הדו״ח נשלח לטכנאי
+        </p>
+    </article>
+    <span class="clock"></span>
+</section>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" ng-app="portalSMB">
+    <head>
+        <meta charset="utf-8">
+        <title>Portal Smart Box</title>
+        <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link href="css/iconFonts.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="css/app.css"/>
+    </head>
+    <body ng-class="{'homePage': isHomePage === true}" ng-controller="mainCtrl">
+        <header>
+            <h1><span class="orange">Orange</span> SmartBox</h1>
+            <span ng-if="!isHomePage" ng-click="$goHome()" class="icon right icon-home"></span>
+        </header>
+    <ng-view></ng-view>
+
+
+    <script src="app/js/angular/angular.min.js" type="text/javascript"></script>
+    <script src="app/js/angular-route/angular-route.min.js" type="text/javascript"></script>
+    <script src="app/js/angular-touch/angular-touch.min.js" type="text/javascript"></script>
+    <script src="js/vendor/angular-local-storage.min.js" type="text/javascript"></script>
+    <script src="app/js/iScroll/iscroll-min.js" type="text/javascript"></script>
+    <script src="app/js/iScroll/iscroll-zoom-min.js" type="text/javascript"></script>
+    <script src="js/vendor/ng-iscroll.js" type="text/javascript"></script>
+    <script src="app/js/jquery/jquery.js" type="text/javascript"></script>
+    <script src="js/app.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/directives.js"></script>
+</body>
+</html>
