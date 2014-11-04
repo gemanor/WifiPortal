@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # angular-seed — the seed for AngularJS apps
 
 This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
@@ -275,3 +276,9 @@ For more information on AngularJS please check out http://angularjs.org/
 [karma]: http://karma-runner.github.io
 [travis]: https://travis-ci.org/
 [http-server]: https://github.com/nodeapps/http-server
+=======
+WifiPortal
+==========
+
+Cross-Platform Mobile App to manage The Smart-Box. Smart-Box is an ISP &amp; WiFi Box supplied by Orange that Includes some interesting features &amp; Remote Self-Service options
+>>>>>>> 4b383cc85102116e61b75951f77ef8b2309ecf9a
